@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.availability-header {
+    text-align: center;
+    padding: 30px;
+    background-color: #28a745;
+    color: white;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.availability-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.availability-header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Train List Styling */
+#availableTrains {
+    width: 70%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    animation: fadeInItem 1s ease-in-out;
+    opacity: 0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Train Image Styling */
+.train-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInItem {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for Slide In From Top */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #availableTrains {
+        width: 90%;
+    }
+}

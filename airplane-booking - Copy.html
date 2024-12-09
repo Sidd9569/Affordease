@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Booking</title>
+    <link rel="stylesheet" href="airplane.css">
+</head>
+<body>
+    <header>
+        <h1>Airplane Booking Service</h1>
+    </header>
+
+    <div class="container">
+        <form id="booking-form">
+            <label for="from">From:</label>
+            <select id="from" required>
+                <option value="" disabled selected>Select Departure Location</option>
+                <option value="New York">New York</option>
+                <option value="Chicago">Chicago</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" required>
+                <option value="" disabled selected>Select Destination</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Miami">Miami</option>
+                <option value="Las Vegas">Las Vegas</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="button" id="check-availability">Check Availability</button>
+        </form>
+
+        <div id="availability-results" class="hidden">
+            <h2>Available Flights</h2>
+            <ul id="flights-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Airplane Booking Service. All rights reserved.</p>
+    </footer>
+
+    <script src="airplanes.js"></script>
+</body>
+</html>
+
+
+
+
+
+

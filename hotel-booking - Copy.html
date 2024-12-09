@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Service</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking Service</h1>
+
+    </header>
+
+    <div class="container">
+        <form id="booking-form">
+            <label for="location">Location:</label>
+            <select id="location" required>
+                <option value="" disabled selected>Select Hotel Location</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+            </select>
+
+            <label for="check-in">Check-In Date:</label>
+            <input type="date" id="check-in" required>
+
+            <label for="check-out">Check-Out Date:</label>
+            <input type="date" id="check-out" required>
+
+            <button type="button" id="check-availability">Check Availability</button>
+        </form>
+
+        <div id="availability-results" class="hidden">
+            <h2>Available Hotels</h2>
+            <ul id="hotels-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking Service. All rights reserved.</p>
+    </footer>
+
+    <script src="hotel.js"></script>
+</body>
+</html>
+

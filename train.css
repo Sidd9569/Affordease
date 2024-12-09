@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.booking-header {
+    text-align: center;
+    padding: 50px;
+    background-color: #007bff;
+    color: white;
+    animation: fadeInSlideDown 1s ease-in-out;
+}
+
+.booking-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.booking-header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+.booking-form {
+    width: 40%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    height: 58vh;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: scale(1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+
+/* Fade In and Slide Down for Header */
+@keyframes fadeInSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In for Form */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-form {
+        width: 90%;
+    }
+
+    .booking-header h1 {
+        font-size: 28px;
+    }
+
+    .booking-header p {
+        font-size: 16px;
+    }
+}
+

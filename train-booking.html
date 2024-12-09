@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking - Affordease</title>
+    <link rel="stylesheet" href="train.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="booking-header">
+        <h1>Train Booking</h1>
+        <p>Book your train and check availability</p>
+    </div>
+
+    <div class="booking-form">
+        <form id="trainBookingForm">
+            <label for="from-train">From:</label>
+            <select id="from-train" required>
+                <option value="">Select City</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+
+            <label for="to-train">To:</label>
+            <select id="to-train" required>
+                <option value="">Select City</option>
+                <option value="Azamgarh">Azamgarh</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+
+            <label for="date-train">Date:</label>
+            <input type="date" id="date-train" required>
+
+            <label for="time-train">Time:</label>
+            <input type="time" id="time-train" required>
+
+            <button type="submit" id="checkAvailabilityButton">Check Availability</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Affordease © 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script src="train.js"></script>
+</body>
+</html>
